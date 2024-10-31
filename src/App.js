@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FitLifeForm from './components/FitLifeForm';
+import styles from './styles/FormStyles.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.appBackground}>
+      <h1 className={styles.header}>¡Únete a FitLife!</h1>
+      <p className={styles.subHeader}>
+        Completa el formulario para unirte a nuestro viaje hacia una vida más saludable.
+      </p>
+      <FitLifeForm />
     </div>
   );
 }
